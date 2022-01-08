@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+.zemr{
+    margin-top: 4rem;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 12px 0px #444444;
+}
+
+.deposit{
+    padding: 10px;
+    margin-top: 1rem;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+@media(max-width: 991px){
+    .zemr{
+        font-size: 20px;
+         margin-top: 2rem;
+    }
+    
+    .deposit{
+        font-size: 18px;
+    }
+}
