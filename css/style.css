@@ -3,14 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-.background{
+body{
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/back1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-bottom: 20px;
+}
+
+.background{
+    padding-bottom: 70px;
 }
 
 .zemr{
