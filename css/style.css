@@ -1,41 +1,123 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/back1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.background {
+  /* padding-bottom: 70px; */
+}
+.zemr {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 12px 0px #444444;
+}
+.deposit {
+  padding: 10px;
+  margin-top: 1rem;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.section-modal {
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: #198754;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.div-modal {
+  margin: auto;
+  padding: 30px;
+}
+.hading-text {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.para-text {
+  color: #fff;
+  font-size: 16px;
+}
+.close-button {
+  font-size: 16px;
+  width: 100px;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ffc107;
+}
+.form-section {
+  border-radius: 3px;
+  box-shadow: none;
+}
+.form-section:focus {
+  box-shadow: none;
+  outline: none;
+}
+.wrapper {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  top: 38px;
+  right: 26px;
+  cursor: pointer;
+}
+.eye-close {
+  color: rgb(248, 17, 17);
+}
+.wrapper input {
+  padding-right: 40px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+@media (max-width: 991px) {
+  .zemr {
+    font-size: 20px;
+    margin-top: 2rem;
+  }
 
-.background{
-    padding-bottom: 70px;
-}
-
-.zemr{
-    margin-top: 4rem;
-    border: 1px solid #ddd;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 2px 12px 0px #444444;
-}
-
-.deposit{
-    padding: 10px;
-    margin-top: 1rem;
-    letter-spacing: 3px;
-    word-spacing: 4px;
-}
-
-@media(max-width: 991px){
-    .zemr{
-        font-size: 20px;
-         margin-top: 2rem;
-    }
-    
-    .deposit{
-        font-size: 18px;
-    }
+  .deposit {
+    font-size: 18px;
+  }
 }
